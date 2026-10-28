@@ -291,7 +291,7 @@ jobs:
                 --arg test_arguments_override "$xcode_26_2_test_arguments_override"  \
                 --arg runner_pool "$runner_pool"  \
                 --argjson env_vars "$env_vars_json" \
-                '.config[.config| length] |= . + { "name": "Xcode 26.2", "xcode_version": "26.2", "xcode_app": "Xcode_26.2.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "tahoe", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
+                '.config[.config| length] |= . + { "name": "Xcode 26.2", "xcode_version": "26.2", "xcode_app": "Xcode_26.2.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "goldengate", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
             fi
 
             if [[ "$xcode_latest_beta_enabled" == "true" ]]; then
@@ -301,7 +301,7 @@ jobs:
                 --arg test_arguments_override "$xcode_latest_beta_test_arguments_override"  \
                 --arg runner_pool "$runner_pool"  \
                 --argjson env_vars "$env_vars_json" \
-                '.config[.config| length] |= . + { "name": "Xcode latest beta", "xcode_version": "latest beta", "xcode_app": "Xcode-latest.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "tahoe", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
+                '.config[.config| length] |= . + { "name": "Xcode latest beta", "xcode_version": "latest beta", "xcode_app": "Xcode-latest.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "goldengate", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
             fi
 
             if [[ "$swift_6_1_enabled" == "true" ]]; then
@@ -311,7 +311,7 @@ jobs:
                 --arg test_arguments_override "$swift_6_1_test_arguments_override"  \
                 --arg runner_pool "$runner_pool"  \
                 --argjson env_vars "$env_vars_json" \
-                '.config[.config| length] |= . + { "name": "Swift 6.1", "xcode_version": "swift 6.1", "xcode_app": "Xcode_swift_6.1.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "tahoe", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
+                '.config[.config| length] |= . + { "name": "Swift 6.1", "xcode_version": "swift 6.1", "xcode_app": "Xcode_swift_6.1.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "goldengate", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
             fi
 
             if [[ "$swift_6_2_enabled" == "true" ]]; then
@@ -321,7 +321,7 @@ jobs:
                 --arg test_arguments_override "$swift_6_2_test_arguments_override"  \
                 --arg runner_pool "$runner_pool"  \
                 --argjson env_vars "$env_vars_json" \
-                '.config[.config| length] |= . + { "name": "Swift 6.2", "xcode_version": "swift 6.2", "xcode_app": "Xcode_swift_6.2.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "tahoe", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
+                '.config[.config| length] |= . + { "name": "Swift 6.2", "xcode_version": "swift 6.2", "xcode_app": "Xcode_swift_6.2.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "goldengate", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
             fi
 
             if [[ "$swift_6_3_enabled" == "true" ]]; then
@@ -331,7 +331,7 @@ jobs:
                 --arg test_arguments_override "$swift_6_3_test_arguments_override"  \
                 --arg runner_pool "$runner_pool"  \
                 --argjson env_vars "$env_vars_json" \
-                '.config[.config| length] |= . + { "name": "Swift 6.3", "xcode_version": "swift 6.3", "xcode_app": "Xcode_swift_6.3.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "tahoe", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
+                '.config[.config| length] |= . + { "name": "Swift 6.3", "xcode_version": "swift 6.3", "xcode_app": "Xcode_swift_6.3.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "goldengate", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
             fi
 
             if [[ "$swift_6_4_enabled" == "true" ]]; then
@@ -341,7 +341,7 @@ jobs:
                 --arg test_arguments_override "$swift_6_4_test_arguments_override"  \
                 --arg runner_pool "$runner_pool"  \
                 --argjson env_vars "$env_vars_json" \
-                '.config[.config| length] |= . + { "name": "Swift 6.4", "xcode_version": "swift 6.4", "xcode_app": "Xcode_swift_6.4.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "tahoe", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
+                '.config[.config| length] |= . + { "name": "Swift 6.4", "xcode_version": "swift 6.4", "xcode_app": "Xcode_swift_6.4.app", "setup_command": $setup_command, "build_arguments_override": $build_arguments_override, "test_arguments_override": $test_arguments_override, "os": "goldengate", "arch": "ARM64", "pool": $runner_pool, "env": $env_vars }')
             fi
 
             echo "$matrix" | jq -c
